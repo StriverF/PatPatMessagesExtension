@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="ObA-dk-sSI">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Messages View Controller-->
+        <scene sceneID="7MM-of-jgj">
+            <objects>
+                <viewController id="ObA-dk-sSI" customClass="MessagesViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="zMn-AG-sqS">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="528"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="rvE-1O-za3">
+                                <rect key="frame" x="0.0" y="40" width="320" height="488"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="8" minimumInteritemSpacing="8" id="qMT-HD-ZXd">
+                                    <size key="itemSize" width="114" height="164"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells/>
+                                <connections>
+                                    <outlet property="dataSource" destination="ObA-dk-sSI" id="Gdx-Pc-AW7"/>
+                                    <outlet property="delegate" destination="ObA-dk-sSI" id="3i8-pP-SQd"/>
+                                </connections>
+                            </collectionView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KIw-io-BYQ">
+                                <rect key="frame" x="0.0" y="20" width="320" height="20"/>
+                                <color key="backgroundColor" red="0.26853589219182566" green="0.93207124979967992" blue="0.4933876640998538" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="iFD-H0-QEk"/>
+                                </constraints>
+                                <attributedString key="attributedText">
+                                    <fragment content="分享你购买过的商品给朋友">
+                                        <attributes>
+                                            <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" size="13" name=".PingFangSC-Regular"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="LDy-ih-0nr" firstAttribute="top" secondItem="KIw-io-BYQ" secondAttribute="top" id="5ZB-Zp-Tjf"/>
+                            <constraint firstItem="KIw-io-BYQ" firstAttribute="leading" secondItem="LDy-ih-0nr" secondAttribute="leading" id="7Id-gD-P7w"/>
+                            <constraint firstItem="LDy-ih-0nr" firstAttribute="bottom" secondItem="rvE-1O-za3" secondAttribute="bottom" id="7Zb-UY-hgQ"/>
+                            <constraint firstItem="LDy-ih-0nr" firstAttribute="trailing" secondItem="KIw-io-BYQ" secondAttribute="trailing" id="BQF-yT-U4X"/>
+                            <constraint firstItem="rvE-1O-za3" firstAttribute="top" secondItem="LDy-ih-0nr" secondAttribute="top" constant="20" id="FLK-7u-9LP"/>
+                            <constraint firstItem="rvE-1O-za3" firstAttribute="leading" secondItem="LDy-ih-0nr" secondAttribute="leading" id="qch-xm-HfI"/>
+                            <constraint firstItem="LDy-ih-0nr" firstAttribute="trailing" secondItem="rvE-1O-za3" secondAttribute="trailing" id="s6x-Lt-TtP"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="LDy-ih-0nr"/>
+                    </view>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="320" height="528"/>
+                    <connections>
+                        <outlet property="collectionView" destination="rvE-1O-za3" id="Atd-hn-H8R"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="X47-rx-isc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1318.4000000000001" y="115.14242878560721"/>
+        </scene>
+    </scenes>
+</document>
