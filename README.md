@@ -12,3 +12,5 @@ MessagesExtension
 **用户购买过的商品列表**
 ![patpat iMessages](http://7xl48q.com1.z0.glb.clouddn.com/F5913FC8-BAB6-41DD-A82F-37DFF537E788.jpeg)
 
+ios11 信息里面的插件，可以发送网页链接或APP内链。
+
